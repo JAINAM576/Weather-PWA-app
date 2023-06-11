@@ -1,0 +1,119 @@
+.about-us-container {
+    
+    margin: 0 auto;
+    padding: 40px;
+  
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    background:linear-gradient(rgba(0, 0, 0, 0.507),black);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  }
+  
+  p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    }
+    
+    p:last-child {
+    margin-bottom: 0;
+    }
+    body {
+        background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.418) ), url('https://i.ibb.co/R9hwSbx/bg.jpg');
+    
+        }
+        
+        .about-us-container {
+        animation: slideInUp 1s ease-in-out;
+        }
+        
+        @keyframes slideInUp {
+        from {
+        opacity: 0;
+        transform: translateY(100px);
+        }
+        to {
+        opacity: 1;
+        transform: translateY(0);
+        }
+        }  
+     
+
+        #animation{
+            color:white;
+            position: relative;
+            width: 200px;
+            overflow: hidden;
+            margin: auto;
+            font-size: 30px;
+                    }
+                    #animation::before{
+                        content: "About Us";
+                        position: absolute;
+                   width: 200px;
+                   transition: all 1s;
+                        color:lime;
+                        border-right: 2px solid lime;
+                        overflow: hidden;
+            animation: effect 1.5s linear infinite;
+                    }
+                @keyframes effect {
+                    0%{
+                        width: 200px;
+
+                    }
+                    25%{
+                        width: 150px;
+                     
+                    }
+                    50%{
+                        width: 100px;
+                   
+                    }
+                    75%{
+                        width: 50px;
+                      
+                    }
+                    100%{
+                        width: 0px;
+                      
+                    }
+                }
